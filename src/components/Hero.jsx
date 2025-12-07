@@ -13,7 +13,7 @@ const Hero = () => {
           <a href="mailto:baumendhra@gmail.com">
           <img src="./public/assets/mail.svg" alt="email" /></a>
           <a href="https://github.com/Baumendhra">
-          <img src="./public/assets/github-circle.svg" alt="github" />
+          <img src="public/github-circle.svg" alt="github" />
           </a>
           <a href="https://www.linkedin.com/in/baumendhra-k/">
           <img src="./public/assets/linkedin.svg" alt="LinkedIn" />
