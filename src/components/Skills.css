@@ -1,0 +1,20 @@
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+}
+
+.skills li {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.skills li:hover {
+  background-color: #333;
+}

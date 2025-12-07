@@ -1,0 +1,88 @@
+/* Example: apply transition only to common interactive tags */
+a, button, input, div, span, p, li {
+  transition: all 0.3s ease;
+}
+
+a:hover, button:hover, div:hover, span:hover, p:hover, li:hover {
+  transform: scale(1.02);
+}
+
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: transparent;
+  width: 100%;
+  position: relative;
+}
+
+.resume-top-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  color: black;
+}
+
+.intro h1 span {
+  color: white;
+  background-color: black;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+  max-width: 500px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  margin-right: 15px;
+  color: black;
+  font-size: 1.8rem;
+  transition: transform 0.2s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.photo img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit:cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.resume-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+   transition: background-color 0.3s ease;
+}
