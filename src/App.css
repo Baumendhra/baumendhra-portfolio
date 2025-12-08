@@ -214,3 +214,30 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+@media (max-width: 768px) {
+  
+  .left-panel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .left-panel nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .right-panel {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .app-container {
+    flex-direction: column;
+  }
+}
