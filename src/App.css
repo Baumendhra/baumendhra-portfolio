@@ -31,7 +31,7 @@ button, img, h1, h2, h3, a {
   height: 100vh;
   background-color: white;
   color: black;
-  margin: left 250px;
+  margin-left: 250px; /* fixed syntax */
 }
 
 /* Left fixed panel */
@@ -42,7 +42,7 @@ button, img, h1, h2, h3, a {
   padding: 20px;
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -79,9 +79,8 @@ button, img, h1, h2, h3, a {
 
 /* Right scrollable content area */
 .right-panel {
-  /*margin-left: 250px; /*Space for left panel */
-  flex: 1;
-  min-width: 0;
+  margin-left: 250px;
+  width: calc(100% - 250px);
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -91,11 +90,10 @@ button, img, h1, h2, h3, a {
 
 /* Sections */
 .section {
-  min-height: auto; /* remove forced height */
-  padding: 30px 20px; /* reduce padding */
-  margin-bottom: 40px; /* optional: controls spacing between sections */
+  min-height: auto; 
+  padding: 30px 20px; 
+  margin-bottom: 40px;
 }
-
 
 /* Resume button styling */
 .resume-btn {
@@ -152,7 +150,7 @@ button, img, h1, h2, h3, a {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  max-width: 100;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -188,33 +186,11 @@ button, img, h1, h2, h3, a {
 }
 
 .resume-btn:hover {
-  background-color: #000000; /* cyan hover */
+  background-color: #000000; 
   color: rgb(255, 255, 255);
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-/* Fix right panel overflow */
-.right-panel {
-    margin-left: 250px;
-    width: calc(100% - 250px);
-    overflow-y: auto;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-/* Prevent top section overflow */
-.top-bar {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
+/* Mobile Responsive Fix */
 @media (max-width: 768px) {
   
   .left-panel {
@@ -239,5 +215,6 @@ html, body {
 
   .app-container {
     flex-direction: column;
+    margin-left: 0;
   }
 }
