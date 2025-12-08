@@ -11,12 +11,12 @@ const Hero = () => {
         <p>Software Developer & Problem Solver</p>
         <div className="socials">
           <a href="mailto:baumendhra@gmail.com">
-          <img src="./public/assets/mail.svg" alt="email" /></a>
+          <img src="assets/mail.svg" alt="email" /></a>
           <a href="https://github.com/Baumendhra">
-          <img src="public/github-circle.svg" alt="github" />
+          <img src="assets/github-circle.svg" alt="github" />
           </a>
           <a href="https://www.linkedin.com/in/baumendhra-k/">
-          <img src="./public/assets/linkedin.svg" alt="LinkedIn" />
+          <img src="assets/linkedin.svg" alt="LinkedIn" />
           </a>
           <a href="/resume.png" download className="resume-btn">
             Download Resume
